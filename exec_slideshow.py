@@ -50,4 +50,5 @@ class SlideshowApp(tk.Tk):
 if __name__ == "__main__":
     app = SlideshowApp()
     app.bind('<Control-q>', lambda event: app.destroy())
+    app.bind('<Escape>', lambda event: app.destroy())
     app.mainloop()
